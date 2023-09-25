@@ -1,0 +1,463 @@
+/* Styles for Admin Meta Boxes and Text fields */
+
+
+/* Remove YOAST Meta Box */
+#wpseo_meta {
+    display: none;
+}
+
+/* Remove Menu Items */
+.user-level-1 #menu-posts, 
+.user-level-1 #menu-comments,
+.user-level-1 #wp-admin-bar-new-post,
+.user-level-1 #wp-admin-bar-new-media,
+.user-level-1 #wp-admin-bar-comments,
+.user-level-1 #toplevel_page_wpcf7 {
+    display: none;
+}
+
+
+
+
+.metabox-holder	{
+	position: relative;
+	padding-top: 0!important;
+}
+
+	.metabox-holder .metabox-row {
+		position: relative;
+		display: block;
+		margin: 10px 0 15px;
+	}	
+
+		.metabox-row.hidden-meta-box {
+		    display: none;
+		}
+
+		.metabox-row.top-margin {
+			margin-top: 20px;
+		}
+
+		.metabox-holder .metabox-row:first-child {
+			margin-top: 0;
+		}
+
+		.metabox-row label {
+			display: block;
+			font-weight: 700;
+			font-size: 14px;
+			margin: 5px 0;
+			cursor: default;
+		}
+
+			.metabox-row label em {
+			    font-size: 12px;
+			    color: #797979;
+			    font-weight: normal;
+			    font-style: normal;
+			}
+	
+		.metabox-row input[type="text"],
+		.metabox-row input[type="email"],
+		.metabox-row input[type="phone"],
+		.metabox-row textarea {
+			width: 100%;
+		}
+
+		.photo-holder canvas {
+		    width: 100%;
+		    height: 100%;
+		    display: block;
+		    max-height: 100px;
+		    max-width: 100%;
+		    border: 1px solid #eee;
+		    background: #fff url(../images/no-photo.png) center center no-repeat;
+		    background-size: auto 80%;
+		}
+
+		    .photo-holder img {
+		        background: #eee;
+		        padding: 5px;
+		        width: auto;
+		        max-height: 330px;
+		    }
+
+		
+.metabox-radio-wrap {
+    margin: 5px 0 5px 10px;
+}
+
+	.metabox-radio-wrap span {
+		display: inline-block;
+		cursor: pointer;
+	}
+
+.meta-button {
+	display: inline-block;
+
+	margin: 10px 0;
+	padding: 4px 8px;
+
+    position: relative;
+    text-decoration: none;
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+	.meta-button:hover{
+		background: #00a0d2;
+		color: #fff;
+	}
+
+	.meta-button.disable-btn {
+	   display: none;
+	}
+
+
+.metabox-float-wrap {
+	position: relative;
+	margin: 10px 0;
+}
+
+	.metabox-float-wrap:after {
+		clear: both;
+		display: block;
+		content: '';
+	}
+
+	.metabox-float-wrap .metabox-left,
+	.metabox-float-wrap .metabox-right {
+		float: left;
+		width: 49%;
+	}
+
+	.metabox-float-wrap .metabox-right {
+		float: right;
+	}
+
+
+.metabox-list {
+	position: relative;
+}
+
+	.metabox-list ul {
+		display: block;
+		margin-left: 6px;
+		position: relative;
+	}	
+
+		.metabox-list ul:before {
+		    position: absolute;
+		    left: 0;
+		    height: 100%;
+		    width: 1px;
+		    content: '';
+		    background: #ccc;
+		    left: -6px;
+		}
+
+		.metabox-list ul#top-level:before {
+		    display: none;
+		}
+
+		.metabox-list ul#top-level {
+			margin-left: 0!important;
+		}
+
+		.metabox-list ul li {
+			display: block;
+			position: relative;
+		}
+
+			.metabox-list ul li.highlight-list span {
+				-webkit-animation: glowing 1500ms 5;
+				-moz-animation: glowing 1500ms 5;
+				-o-animation: glowing 1500ms 5;
+				animation: glowing 1500ms 5;
+			}
+
+			.postbox.highlight-list {
+				-webkit-animation: glowing 1500ms 5;
+				-moz-animation: glowing 1500ms 5;
+				-o-animation: glowing 1500ms 5;
+				animation: glowing 1500ms 5;
+			}
+
+			@-moz-keyframes glowing {
+			  0% { -moz-box-shadow: 0 0 1px #b3b2b2; }
+			  50% { -moz-box-shadow: 0 0 10px #757575; }
+			  100% { -moz-box-shadow: 0 0 1px #b3b2b2; }
+			}
+
+			@-o-keyframes glowing {
+			  0% {  box-shadow: 0 0 1px #b3b2b2; }
+			  50% {  box-shadow: 0 0 10px #757575; }
+			  100% {  box-shadow: 0 0 1px #b3b2b2; }
+			}
+
+			@keyframes glowing {
+			  0% { box-shadow: 0 0 1px #b3b2b2; }
+			  50% { box-shadow: 0 0 10px #757575; }
+			  100% { box-shadow: 0 0 1px #b3b2b2; }
+			}
+
+		.metabox-list ul li span {
+			text-transform: capitalize;
+			border: 1px solid #ddd;
+			position: relative;
+			padding: 10px 65px 10px 25px;
+			height: auto;
+			width: 212px;
+			/*overflow: hidden;*/
+			word-wrap: break-word;
+			cursor: move;
+			display: block;
+		}
+
+			.metabox-list ul li.add-new span {
+				cursor: pointer;
+			}
+
+				.metabox-list ul li.add-new span {
+					position: relative;
+				}
+
+					.metabox-list ul li.add-new span:before {
+						font: 400 17px/1 dashicons;
+					    speak: none;
+					    display: inline-block;
+					    margin-left: -1px;
+					    padding-right: 3px;
+					    vertical-align: top;
+					    -webkit-font-smoothing: antialiased;
+					    -moz-osx-font-smoothing: grayscale;
+					    content: "\f132";
+					}
+
+			.metabox-list ul li span em {
+				position: absolute;
+				right: 4px;
+				font-size: 0;
+				cursor: pointer;
+			}
+
+				.metabox-list ul li span em.h-edit {
+				    right: 27px;
+				}
+
+				.metabox-list ul li span em.h-add-sub {
+				    right: 50px;
+				    margin-top: 1px;
+				}
+
+				.metabox-list ul li span em:hover {
+					color: red;
+				}
+
+				.metabox-list ul li span em:before {
+					font: 400 17px/1 dashicons;
+				    speak: none;
+				    display: inline-block;
+				    margin-left: -1px;
+				    padding-right: 3px;
+				    vertical-align: top;
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				}
+
+				.metabox-list ul li span em.h-edit:before {
+					content: "\f464";
+				}
+
+				.metabox-list ul li span em.h-del:before {
+					content: "\f182";
+				}
+
+				.metabox-list ul li span em.h-add-sub:before{
+					content: "\f132";
+				}
+
+				.metabox-list ul li span em:after {
+					position: absolute;
+				    top: -21px;
+				    left: 50%;
+				    content: '';
+				    display: block;
+				    font-size: 12px;
+				    width: 100px;
+				    text-align: center;
+				    background: #fff;
+				    border: 1px solid #ccc;
+				    margin-left: -50px;
+				    color: #000;
+
+				    transition: all .25s ease-in-out;
+				    -webkit-transition: all .25s ease-in-out;
+				    -moz-transition: all .25s ease-in-out;
+
+				    opacity: 0;
+				    visibility: hidden;
+				}
+
+				.metabox-list ul li span em:hover:after {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				.metabox-list ul li span em.h-edit:after {
+					content: "Change Entry";
+				}
+
+				.metabox-list ul li span em.h-del:after {
+					content: "Delete Entry";
+				}
+
+				.metabox-list ul li span em.h-add-sub:after{
+					content: "Add Sub Level";
+				}
+
+		.metabox-list ul li ul {
+			margin:6px 0px 6px 30px;
+		}
+
+		/* Metabox Test Fields */
+		.text-draft {
+			overflow: scroll;
+			width: 100%;
+			max-height: 600px;
+			background-image: linear-gradient(90deg, rgba(200, 0, 0, 0.15) 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(rgba(200, 0, 0, 0.15) 10%, rgba(0, 0, 0, 0) 10%);
+			background-size: 10px 10px;
+			border: 1px dashed rgba(0,0,0,0);
+			min-height: 370px;
+		}
+
+/* Taxonomy Editor */
+.archive-btn-holder a {
+    display: inline-block;
+    margin: 9px 1px !important;
+}
+
+.department-logo-wrap img {
+    display: block;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+
+/* notice-info-box */
+.notice-info-box {
+	position: relative;
+}
+
+	.notice-info-box span {
+		display: block;
+		padding: 5px 0;
+		font-size: 11px;
+		line-height: 15px;
+	}
+
+
+/* Metabox Popup */
+.metabox-popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+	.metabox-popup-wrapper .metabox-popup-bg {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 2;
+	    background: rgba(0,0,0,.7);
+	}
+
+	.metabox-popup-wrapper .metabox-content {
+	    background: #fff;
+	    position: relative;
+	    z-index: 5;
+	    width: 26%;
+	    height: auto;
+	    min-height: 321px;
+	    left: 50%;
+	    margin-left: -13%;
+	    top: 20%;
+	    /* margin-top: -25%; */
+	    border-radius: 5px;
+	    box-shadow: 0px 0px 3px #000;
+	    padding: 20px;
+	}
+
+	/* .metabox-popup-wrapper .metabox-content > .metabox-holder {
+	    overflow-y: scroll;
+	    height: 100%;
+	} */
+
+	.metabox-popup-wrapper .metabox-row {
+		margin-bottom: 0;
+	}
+	
+	.metabox-popup-wrapper .metabox-row label {
+		font-weight: 400;
+	}
+
+	.metabox-popup-wrapper .metabox-row select.data-type {
+	    width: 100%;
+	    max-width: 185px;
+	}
+
+	.metabox-popup-wrapper .metabox-float-wrap {
+		margin: 0;
+	}
+	
+	.metabox-popup-wrapper .data-list-wrap {
+		display: none;
+	}
+
+	.metabox-popup-wrapper .data-list-wrap.employee {
+		display: block;
+	}
+
+		.metabox-popup-wrapper .data-list-wrap select {
+		    width: 100%;
+		    margin-top: 10px;
+		    height: auto;
+		}
+
+	.metabox-holder .metabox-row.static-box-details {
+		display: none;
+	}
+
+
+
+@media only screen and (max-width: 960px){
+	.wp-admin .aiosp-container {
+		width: calc(100% - 36px);
+		margin-left: 36px;
+	}
+}
+
+@media only screen and (max-width: 782px){
+	.wp-admin .aiosp-container {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.metabox-float-wrap .metabox-left,
+	.metabox-float-wrap .metabox-right {
+		float: none;
+		width: 100%;
+	}
+}

@@ -1,0 +1,319 @@
+.org-chart-legend a{
+	text-decoration: none;
+}
+
+
+.directory-body a {
+    color: inherit;
+}
+
+.directory-body a.search-by-dep {
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 10px;
+	text-align: center;
+	/* width: 165px; */
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	border-radius: 22px;
+	background-color: #cccccc;
+	border: solid 1px #bdbdbd;
+	padding: 8px 20px;
+	transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.directory-body a.search-by-dep:hover {
+	background: #fc5a14;
+	color: #fff;
+	border-color: #fff;
+}
+
+.directory-body{
+	font-family: 'Arimo', sans-serif;
+
+}
+.directory-body td {
+	text-align: left;
+}
+	.directory-body td img{
+	    margin: 0 auto;
+	    display: block;
+	}
+.directory-body  .full-name {
+    font-weight: bold;
+}
+
+table tr td:nth-child(2){
+	font-weight: bold;
+}
+
+#DataTables_Table_0 thead tr th {
+    background: #e2e2e2!important;
+    background-image: url(../images/sort_both.png)!important;
+    background-position: center right!important;
+    background-repeat: no-repeat!important;
+}
+
+.dataTables_filter label{
+	font-size: 0;
+	position: relative;
+	display: inline-block;
+	    vertical-align: middle;
+}
+.dataTables_filter label:before{
+    content: "\b0035";
+    font-family: 'agentimage';
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 13px;
+    /* top: -2px; */
+    z-index: 5;
+    opacity: 0.7;
+}
+	.dataTables_filter label input {
+		height: 30px;
+		width: 396px;
+		background: #fff;
+		font-size: 20px;
+		display: inline-block;
+		border: none;
+		vertical-align: top;
+		position: relative;
+		z-index: 1;
+		outline: none;
+		padding: 5px 10px 4px 49px;
+		border: 1px solid #bbbbbb;
+		margin-left: 0 !important;
+		    border-radius: 22px;
+		    color: #737373;
+	}
+
+
+.dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: center;
+    position: relative;
+    max-width: 463px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.footerwrapper{
+	width: 100%;
+	height: auto;
+    padding-top: 100px;
+}
+	.footer{
+
+	}
+		.footer .footer-text{
+
+		}
+			.footer .footer-text h3{
+				font-weight: 700;
+				font-size: 17px;
+				color: #9e9d9d;
+			}
+			.footer .footer-text p{
+			    font-size: 15px;
+			    color: #9e9d9d;
+			}
+			.footer .footer-text.pull-right{
+				text-align: right;
+			}
+
+.directory-body tr{
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+.directory-body table tr td:nth-child(1){
+  border-right: 1px solid #ddd;	
+}
+
+.directory-body table tr td:nth-child(3), 
+.directory-body table tr td:nth-child(5),
+.directory-body table tr td:nth-child(7){
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+
+
+.directory-body tr:hover,
+.directory-body tr:hover td,
+.directory-body table tr:hover td:nth-child(2), 
+.directory-body table tr:hover td:nth-child(4), 
+.directory-body table tr:hover td:nth-child(6){
+    background: #e2e2e2 !important;
+}
+
+
+::-webkit-search-cancel-button {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background: url(../images/search-clear.png) no-repeat 0 0 transparent;
+    font-size: 12px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+
+table.dataTable tbody tr.hide {
+	display: none;
+}
+
+.category-selected {
+	padding: 10px;
+	color: #6b6b6b;
+
+	display: none;
+}
+
+	.category-selected .sel-dep-text{
+		background: #e0e0e0;
+		padding: 5px 8px;
+		border-radius: 10px;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+		.category-selected .sel-dep-text:after {
+		    content: 'x';
+		    display: inline-block;
+		    margin-left: 5px;
+		    color: red;
+		    top: -1px;
+		    position: relative;
+		}
+
+.table-responsive{
+	overflow: visible;
+}
+/* Directory Category */
+.category-wraps {
+	max-width: 980px;
+	display: block;
+	margin: 0 auto 20px;
+	display: none;
+}
+
+	.category-wraps .category-list {
+		margin: 0!important;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+		text-align: center;
+	}
+
+		.category-wraps .category-list li {
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			max-width: 163px;
+			font-size: 13.5px;
+			color: #666666;
+			margin: 3px 12px;
+			border-radius: 22px;
+			background-color: #fff;
+			border: solid 1px #bdbdbd;
+			padding: 10px 5px;
+			cursor: pointer;
+
+			transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+		}
+
+			.category-wraps .category-list li:hover,
+			.category-wraps .category-list li.selected {
+				color: #fff;
+				background: #fc5a14;
+				border-color: #fc5a14;
+			}
+
+		.category-wraps .category-list li.c-list-block {
+			display: block;
+			margin: 3px auto 15px;
+		}
+
+			.category-wraps .category-list li i,
+			.category-wraps .category-list li span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.category-wraps .category-list li span {
+				margin-left: 8px;
+			}
+/**** MONO LOGO ****/
+.dv {
+	text-align: center;
+   font-size: 0;
+}
+.multi-division{
+	padding: 0 !important;
+}
+.multi-division .dv div {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px;
+}
+	.dv div{
+	    background-size: 100% 100% !important;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+	}
+	.dv .division-thedesignpeople {
+		background-image: url(../images/logo-tdp.png) !important;
+
+	}
+	.dv .division-real{
+		background-image: url(../images/logo-real.png) !important;
+	}
+	.dv .division-agentimage{
+		background-image: url(../images/logo-ai.png) !important;
+	}
+	.dv .division-loft{
+		background-image: url(../images/logo-loft.png) !important;
+	}
+	.dv .division-august-99{
+		background-image: url(../images/logo-a99.png) !important;
+		background-size: 100% auto !important;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+/**** MONO LOGO ****/
+th{
+	outline: none;
+}
+body #content-full th.divisions,
+body #content-full th.pic,
+body #content-full th.extension{
+	background-image: none !important
+}
+
+@media only screen and (max-width: 991px) {
+	.table-responsive{
+		overflow: auto;
+	}
+	.directory-body a.search-by-dep{
+		margin-top: 30px;
+	}
+}

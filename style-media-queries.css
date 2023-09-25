@@ -1,0 +1,235 @@
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+
+ 
+/* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
+@media only screen and (max-width: 1199px) {
+
+	div#chart-container {
+	    overflow-x: scroll;
+	    -webkit-overflow-scrolling: touch;
+	}
+
+} 
+
+/* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
+@media only screen and (max-width: 991px) {
+	
+	/* The following are used on inner pages. Please edit carefully. */
+
+	.inner {
+	    width: 100%;
+	}
+	#content-sidebar, #content-full {
+	    width: 100%;
+	}	
+	.outer{
+		width: 100%;
+		min-width: 100%;
+	}
+	#content-sidebar #content{
+		width: 100%;
+	}
+
+
+	main#main-content {
+	    padding-top: 170px;
+	}
+
+	.logo{
+		float: none;
+	}
+	.mini-logo{
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		padding-top: 0;
+		text-align: left;
+	}
+		.mini-logo a{
+			width: 10%;
+		}
+
+	.services-links{
+		padding-left: 12%;
+	}
+
+	.division-wrap .col-md-3 {
+	    padding-bottom: 30px;
+	}
+
+	.navigation #nav li a {
+	    margin: 3px 0;
+	}
+
+
+	/* Footer */
+	.footer-details {
+		padding: 40px 0;
+	}
+
+	.footer-details .details-left,
+	.footer-details .details-right {
+		text-align: center;
+	}
+
+	.center-padd {
+		padding: 168px 0;
+	}
+
+
+	/* Custom Position */
+	.orgchart-node[class*=left] {
+		left: 0!important;
+	}
+
+
+	.circle-holder {
+		margin: 30px 0;
+	}
+
+	.division-wrap {
+		padding-top: 50px;
+	}
+
+	.popup-main-wrapper .popup-content-area-inner {
+		padding-top: 160px;
+	}
+
+	.popup-content-area-inner .container > .popup-close-btn {
+		top: 21px;
+	}
+
+
+}
+
+/* Galaxy Tab 3(portrait) | Galaxy S5(landscape) | Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
+@media only screen and (max-width: 767px) {
+
+	body.no-scroll {
+		padding: 0;
+	}
+
+	/* header */
+
+	#main-header {
+		padding: 0;
+		position: relative;
+	}
+
+		.mini-logo {
+			text-align: center;
+		}
+
+	#main-header .logo {
+		padding: 14px 0;
+	}
+
+	#main-header .logo img {
+		margin: 0 auto;
+	}
+
+	#main-header .navigation {
+		display: none;
+	}
+
+	/* Mobile Nav */
+	.mobile-nav {
+		display: block;
+		width: 100%;
+		padding: 10px 10px;
+		font-size: 13px;
+		color: #cccccc;
+		background: #262626;
+		text-align: left;
+	}
+
+	.mobile-nav nav {
+		margin-top: 10px;
+
+		/*display: block;*/
+	}
+
+		.mobile-nav nav #nav_mobile {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: block;
+		}
+
+		.mobile-nav #nav_mobile li {
+		    border-top: 1px solid #3c3c3c;
+		}
+
+		.mobile-nav #nav_mobile li:first-child {
+			border: none;
+		}
+
+		.mobile-nav #nav_mobile li a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 18px;
+			padding: 9px;
+			text-decoration: none;
+			letter-spacing: 1px;
+
+			transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+		}
+
+		.mobile-nav #nav_mobile li a i.sprite.sprite-icon-home {
+		    font-size: 18px;
+		    font-style: normal;
+		    display: block;
+		    margin: 0;
+		    width: auto;
+		    height: auto;
+		    background: none;
+		}
+
+		.mobile-nav #nav_mobile li:hover a {
+		    color: #fff;
+		    background: #e61e25;
+		}
+
+
+		.legend-wrap {
+			position: relative;
+			width: 100%;
+			margin-top: 10px;
+		}
+
+	main#main-content {
+	    padding-top: 20px;
+	}
+
+	
+	.main-footer {
+		padding: 28px 0px 50px;
+	}
+
+	
+	.popup-main-wrapper {
+		z-index: 100;
+	}
+
+	.popup-main-wrapper .popup-content-area-inner {
+	    padding-top: 10px;
+	}
+
+	.popup-content-area-inner .container > .popup-close-btn {
+	    position: relative;
+	    top: 0;
+	    right: 0;
+	}
+
+
+
+}
+ 
